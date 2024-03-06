@@ -236,12 +236,25 @@ h2 {
 nav[aria-label="main"] {
   text-align: center;
 
+  .header-nav-logo {
+    position: absolute;
+    display: block;
+    margin-top: -2px;
+    margin-left: -28px;
+  }
+
   ul {
     padding: 0;
     margin-bottom: 0;
     @include respond(3) {
       display: inline-block;
       margin-bottom: -$half;
+    }
+  }
+
+  svg {
+    @include respond(2) {
+      margin-right: 0.5rem;
     }
   }
 
@@ -252,13 +265,7 @@ nav[aria-label="main"] {
     font-weight: 500;
 
     &:hover {
-      a {
         color: $color-highlight;
-      }
-      // These are for the SVG logo
-      .style1, .style2 {
-        fill: $color-highlight;
-      }
     }
 
     &:first-of-type {
@@ -273,10 +280,12 @@ nav[aria-label="main"] {
       }
       span.longname { @include hide-onmobile-then(inline); }
       a {
+        display: flex;
+        align-items: center;
         padding-top: 0;
         padding-bottom: 0;
-        padding-left: 46px;
         padding-right: 12px;
+        padding-left: 46px;
         @include respond(3) { padding-right: 22px; }
         @include respond(4) { padding-right: 34px; }
       }
