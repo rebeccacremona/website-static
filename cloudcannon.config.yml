@@ -17,8 +17,10 @@ collections_config:
   Draft Blog Posts:
     path: _drafts
     name: Drafts
-    icon: event
+    icon: psychology_alt
     disable_url: false
+    description: ''
+    _enabled_editors:
     _inputs:
       categories:
         type: multiselect
@@ -43,8 +45,10 @@ collections_config:
   Blog Posts:
     path: _posts
     name: Posts
-    icon: event_available
+    icon: newspaper
     disable_url: false
+    description: ''
+    _enabled_editors:
     _inputs:
       categories:
         type: multiselect
@@ -81,32 +85,40 @@ collections_config:
   Jobs:
     path: _jobs
     name: Jobs
-    icon: sos
+    icon: person_search
     disable_url: true
+    description: ''
+    _enabled_editors:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
   Our Work (listed, but no project page):
     path: _our_work_pageless
     name: Our Work Pageless
-    icon: workspaces
+    icon: work_off
     disable_url: true
+    description: ''
+    _enabled_editors:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
   Our Work:
     path: _our_work
     name: Our Work
-    icon: group_work
+    icon: work_outline
     disable_url: false
+    description: ''
+    _enabled_editors:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
   Other Pages:
     path: ''
-    name: Pages
-    icon: wysiwyg
+    name: Other Pages (Home, About, 404, etc.)
+    icon: toc
     disable_url: false
+    description: ''
+    _enabled_editors:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
